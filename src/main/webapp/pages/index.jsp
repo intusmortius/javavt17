@@ -2,10 +2,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link href="<c:url value="${pageContext.request.contextPath}/webjars/bootstrap/3.1.0/css/bootstrap.min.css" />" rel="stylesheet">
-    <link href="/resources/css/basic.css" rel="stylesheet">
-    <script src="<c:url value="${pageContext.request.contextPath}/webjars/jquery/1.9.0/jquery.min.js"  />"></script>
-    <script src="<c:url value="${pageContext.request.contextPath}/webjars/bootstrap/3.1.0/js/bootstrap.js"  />"></script>
+    <link href="<c:url value="/webjars/bootstrap/3.1.0/css/bootstrap.min.css" />" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/resources/css/basic.css" rel="stylesheet">
+    <script src="<c:url value="/webjars/jquery/1.9.0/jquery.min.js"  />"></script>
+    <script src="<c:url value="/webjars/bootstrap/3.1.0/js/bootstrap.js"  />"></script>
+
+
+
     <title>CRUD operations</title>
 </head>
 <body>
@@ -20,19 +23,19 @@
             <div class="cols">
                 <div class="row">
                     <div class="col-lg-4">
-                        <img class="img-rounded" src="/resources/img/jdbc.png" alt="jdbc logo" width="140" height="140">
+                        <img class="img-rounded" src="${pageContext.request.contextPath}/resources/img/jdbc.png" alt="jdbc logo" width="140" height="140">
                         <p>Java Database Connectivity (JDBC) is an application programming interface (API) for the programming language Java, that defines how a client may access a database.</p>
-                        <p><a class="btn btn-primary" href="/jdbc" role="button">View JDBC &raquo;</a></p>
+                        <p><a class="btn btn-primary" href="${pageContext.request.contextPath}/jdbc" role="button">View JDBC &raquo;</a></p>
                     </div>
                     <div class="col-lg-4">
-                        <img class="img-rounded" src="/resources/img/hiber.png" alt="hibernate logo" width="140" height="140">
+                        <img class="img-rounded" src="${pageContext.request.contextPath}/resources/img/hiber.png" alt="hibernate logo" width="140" height="140">
                         <p>Hibernate ORM is framework for the Java language. It provides a framework for mapping an object-oriented domain model to a relational database.</p>
-                        <p><a class="btn btn-primary" href="/hibernate" role="button">View Hibernate&raquo;</a></p>
+                        <p><a class="btn btn-primary" href="${pageContext.request.contextPath}/hibernate" role="button">View Hibernate&raquo;</a></p>
                     </div>
                     <div class="col-lg-4">
-                        <img class="img-rounded" src="/resources/img/jpa.png" alt="hibernate logo" width="140" height="140">
+                        <img class="img-rounded" src="${pageContext.request.contextPath}/resources/img/jpa.png" alt="hibernate logo" width="140" height="140">
                         <p>The Java Persistence API (JPA) is a Java API specification that describes the management of relational data in applications using Java SE and Java EE.</p>
-                        <p><a class="btn btn-primary" href="/jpa" role="button">View JPA &raquo;</a></p>
+                        <p><a class="btn btn-primary" href="${pageContext.request.contextPath}/jpa" role="button">View JPA &raquo;</a></p>
                     </div>
                 </div>
             </div>
